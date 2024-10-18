@@ -1,0 +1,68 @@
+﻿@model List<CMCS.Models.User>
+
+@{
+    ViewData["Title"] = "Registered Lecturers";
+}
+
+<style>
+    /* Set a white background for the main content */
+    body {
+        background-color: white; /* White background for the entire page */
+        color: black; /* Set text color to black for contrast */
+    }
+
+    /* Style the table */
+    table {
+        width: 100%; /* Full width table */
+        margin-top: 20px; /* Space above the table */
+        border-collapse: collapse; /* Merge borders */
+        background-color: white;
+    }
+
+    th, td {
+        padding: 12px; /* Padding for cells */
+        border: 1px solid #ddd; /* Light gray border */
+        text-align: left; /* Align text to the left */
+    }
+
+    th {
+        background-color: #f2f2f2; /* Light gray background for the header */
+    }
+
+    td .btn {
+        margin-right: 10px; /* Add space between buttons */
+    }
+
+</style>
+
+<h1 style="color:white">Registered Users</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Actions</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.Surname</td>
+                <td>@user.Email</td>
+                <td>@user.Role</td>
+                <td>
+                    <!-- Edit and Delete buttons -->
+                    <a asp-controller="Account" asp-action="EditLecturer" asp-route-id="@user.Id" class="btn btn-primary">Edit</a>
+                    <a asp-controller="Account" asp-action="DeleteLecturer" asp-route-id="@user.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
