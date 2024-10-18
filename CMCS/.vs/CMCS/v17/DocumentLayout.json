@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\sajan\\source\\repos\\CMCS\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3B004DC-5365-4A0E-9200-BDB2ED59C0DE}|CMCS\\CMCS.csproj|c:\\users\\sajan\\source\\repos\\cmcs\\cmcs\\models\\viewclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3B004DC-5365-4A0E-9200-BDB2ED59C0DE}|CMCS\\CMCS.csproj|solutionrelative:cmcs\\models\\viewclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +39,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewClaim.cs",
+              "DocumentMoniker": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Models\\ViewClaim.cs",
+              "RelativeDocumentMoniker": "CMCS\\Models\\ViewClaim.cs",
+              "ToolTip": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Models\\ViewClaim.cs",
+              "RelativeToolTip": "CMCS\\Models\\ViewClaim.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T14:21:19.785Z",
+              "EditorCaption": ""
             }
           ]
         }
