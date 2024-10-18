@@ -1,81 +1,163 @@
 # Contract Monthly Claim System (CMCS)
 
+## Table of Contents
+1. [What is CMCS?](#what-is-cmcs)
+2. [Purpose and Objectives](#purpose-and-objectives)
+3. [Key Features](#key-features)
+   - [Claim Submission](#claim-submission)
+   - [Claim Verification and Approval](#claim-verification-and-approval)
+   - [Status Monitoring](#status-monitoring)
+   - [Administrative Management](#administrative-management)
+4. [Project Overview](#project-overview)
+   - [Target Audience](#target-audience)
+5. [System Requirements](#system-requirements)
+   - [Hardware Requirements](#hardware-requirements)
+   - [Software Requirements](#software-requirements)
+6. [Technology Used](#technology-used)
+7. [Installation Instructions](#installation-instructions)
+8. [Testing Instructions](#testing-instructions)
+9. [Technical Aspects](#technical-aspects)
+10. [Colour Code & Themes](#colour-code--themes)
+11. [Conclusion](#conclusion)
+
 ## What is CMCS?
-The Contract Monthly Claim System (CMCS) is a sophisticated web-based application tailored to simplify and enhance the process of managing monthly claims submitted by Independent Contractor (IC) lecturers. This system serves as a vital tool in educational institutions, particularly in managing the often complex and labor-intensive task of processing claims for services rendered by IC lecturers.
+The Contract Monthly Claim System (CMCS) is a sophisticated web-based application specifically designed to simplify and enhance the management of monthly claims submitted by Independent Contractor (IC) lecturers. As educational institutions increasingly rely on IC lecturers to provide quality instruction, the CMCS serves as a vital tool to streamline the often complex and labor-intensive task of processing claims for services rendered.
+
+This application not only addresses the administrative burdens associated with claim submissions but also ensures that all stakeholders have a transparent and efficient system to track and manage claims.
 
 ## Purpose and Objectives
-The CMCS is designed to enhance the submission and approval process, streamlining claims to optimize administrative efficiency and ensure accuracy. Key benefits include:
-- **Improved Efficiency**: Automation of routine tasks.
-- **Faster Claim Processing**: Reducing the time taken for claims to be processed.
-- **Precise Data Entry and Calculations**: Maintaining accuracy in claims.
-- **Enhanced Transparency**: Offering visibility into the status of claim processing for all stakeholders.
+The primary purpose of the CMCS is to enhance the submission and approval process of claims, optimizing administrative efficiency and ensuring accuracy throughout the workflow. The key objectives include:
 
-This document serves as the project plan for the development of CMCS, outlining key design issues, system requirements, installation procedures, and schedules for each stage of development. It acts as a guide to understanding the scope, dependencies, and deliverables of the CMCS project.
+- **Improved Efficiency**: The CMCS automates routine tasks related to claim processing, thereby reducing manual effort and the potential for human error.
+  
+- **Faster Claim Processing**: By streamlining the workflow, the application reduces the time taken for claims to be reviewed and approved, allowing lecturers to receive timely compensation for their services.
+  
+- **Precise Data Entry and Calculations**: The system ensures accurate data entry and calculations, which are critical for maintaining the integrity of the claims process and ensuring that payments are correct.
+  
+- **Enhanced Transparency**: The CMCS offers stakeholders visibility into the status of claim processing, from submission to final approval or rejection, fostering trust and accountability.
 
 ## Key Features
 
 ### Claim Submission
-- An intuitive interface allowing lecturers to submit claims easily.
-- Captures essential information such as hours worked, hourly rate, and supporting notes.
-- Supports uploading of supporting documents like timesheets or invoices for review.
+- **Intuitive Interface**: The CMCS provides a user-friendly interface that allows lecturers to submit claims with ease. This is crucial for ensuring that users of varying technical skills can navigate the system effectively.
+  
+- **Essential Information Capture**: The system captures vital information such as hours worked, hourly rates, as well as any other important information through an online form, ensuring all necessary data is collected upfront.
+  
+- **Document Upload**: Lecturers can upload supporting documents like timesheets or invoices, which are essential for substantiating their claims and ensuring comprehensive review.
 
 ### Claim Verification and Approval
-- Automated workflows enhance the process of verification and approval.
-- Claims are routed to Programme Coordinators and Academic Managers to minimize manual intervention.
-- Users can approve or reject claims against predefined criteria, with decisions being recorded for transparency and accountability.
+- **Automated Workflows**: The CMCS introduces automated workflows that enhance the verification and approval processes, minimizing manual intervention and streamlining communication between users.
+  
+- **Systematic Routing**: Claims are automatically routed to Programme Coordinators and Academic Managers for processing, ensuring that each claim is reviewed by the appropriate personnel.
+  
+- **Decision Recording**: All decisions made regarding claims (approvals, rejections) are recorded and tracked within the system to ensure comprehensive transparency and accountability for all stakeholders involved.
 
 ### Status Monitoring
-- Real-time tracking of claim status from submission to final approval or rejection.
-- Automated notifications to keep users informed about status changes and required actions.
+- **Real-Time Tracking**: Users can track the status of their claims in real-time, providing both lecturers and administrators with clear visibility of where each claim stands in the approval process.
 
 ### Administrative Management
-- Provides HR staff and administrators with data management activities, including lecturer profiles and claim histories.
-- Seamless integration with existing databases for better insights and decision-making.
-- Generates reports for payment processing, auditing, and compliance.
+- **Data Management Capabilities**: CMCS empowers Human Resources staff and administrators with a wide range of data management functionalities, including maintaining lecturer profiles and claim histories.
+  
+- **Seamless Database Integration**: The system can connect seamlessly with existing databases, allowing for better insights and facilitating informed decision-making based on historical data and trends.
+  
+- **Report Generation**: CMCS generates comprehensive reports for payment processing, auditing, and compliance, ensuring efficient administrative operations and adherence to institutional policies.
 
 ## Project Overview
 
 ### Target Audience
-- **Lecturers**: Responsible for submitting claims and attaching supporting documents.
-- **Programme Coordinators**: Verify claims for accuracy and standards before final approval.
-- **Academic Managers**: Final approvers who oversee the entire claim approval process.
-- **Human Resources Staff**: Maintain lecturer data and process claims, ensuring recordkeeping accuracy.
+The CMCS caters to a diverse group of users within educational institutions, each with distinct roles and responsibilities:
+
+- **Lecturers**: As the primary users of the system, lecturers are responsible for submitting claims, attaching supporting documents, and providing detailed information regarding their services. The system simplifies this process, ensuring timely and accurate submissions.
+  
+- **Programme Coordinators**: These users are tasked with scrutinizing claims to ensure accuracy and adherence to institutional standards. They verify that all claims submitted meet the necessary criteria before forwarding them for final approval.
+  
+- **Academic Managers**: Serving as the final approvers, Academic Managers review verified claims and make decisions based on established guidelines. Their oversight ensures that claims are managed with full accountability and a high level of scrutiny.
+  
+- **Human Resources Staff**: HR personnel manage the administrative tasks associated with maintaining lecturer data and processing claims. They utilize the CMCS to monitor claim histories, updates, and compliance reporting, promoting accuracy and efficiency in recordkeeping.
 
 ## System Requirements
 
-### Hardware Requirements:
-- Processor: 1 GHz or faster
-- RAM: 2 GB or more
-- Hard Disk Space: 500 MB of free space
-- Display: 1024 x 768 resolution or higher
+### Hardware Requirements
+To ensure optimal performance of the CMCS, the following hardware specifications are recommended:
+- **Processor**: 1 GHz or faster
+- **RAM**: 2 GB or more
+- **Hard Disk Space**: Minimum of 500 MB of free space
+- **Display**: 1024 x 768 resolution or higher
 
-### Software Requirements:
-- Operating System: Windows 7 or later
-- .NET Framework: Version 4.7.2 or later (will be installed with the application)
-- IDE: Visual Studio
-- Database: SQL Server Management Studio (SSMS)
-- Version Control: GitHub
-- Framework: .NET Core for MVC application
+### Software Requirements
+The following software components are necessary for the successful deployment and operation of the CMCS:
+- **Operating System**: Windows 7 or later
+- **.NET Framework**: Version 4.7.2 or later (will be installed with the application)
+- **IDE**: Visual Studio (for development and maintenance)
+- **Database Management**: SQL Server Management Studio (SSMS)
+- **Version Control**: GitHub (for source code management)
+- **Framework**: .NET Core for MVC application development
+
+## Technology Used
+- **Programming Language**: C#
+- **Framework**: ASP.NET Core MVC
+- **Database**: SQL Server (for data management)
+- **Version Control**: Git for source code management
+- **Web Technologies**: HTML, CSS, JavaScript for front-end development
+
+## Installation Instructions
+To install the CMCS, follow these steps:
+
+1. **Download the Application**: Obtain the CMCS source code from the [GitHub repository](https://github.com/VCDN-2024/prog6212-poe-part-1-ST10249843.git)
+2. **Install Dependencies**:
+   - Ensure that you have .NET Core SDK installed on your machine. You can download it from the [.NET website](https://dotnet.microsoft.com/download).
+   - Install SQL Server Management Studio (SSMS) to manage the database.
+3. **Set Up the Database**:
+   - Open SSMS and create a new database named `CMCS`.
+   - Execute the SQL scripts provided in the `Database` folder of the project to set up the necessary tables and relationships.
+4. **Configure Application Settings**:
+   - Open the `appsettings.json` file in the project and configure the database connection string to point to your newly created `CMCS` database.
+5. **Build the Application**:
+   - Open the solution in Visual Studio and build the application by selecting `Build > Build Solution`.
+6. **Run the Application**:
+   - Start the application using `Ctrl + F5` or by clicking the Start button in Visual Studio. This will launch the application in your default web browser.
+
+## Testing Instructions
+To ensure the CMCS functions as intended, follow these testing instructions:
+
+1. **Unit Testing**:
+   - Utilize a testing framework like NUnit or MSTest to create and run unit tests for individual components of the application.
+   - Ensure that all core functionalities, such as claim submission, verification, and approval workflows, are covered by unit tests.
+
+2. **Integration Testing**:
+   - Test the interaction between different modules (e.g., claim submission and approval) to verify that data flows correctly through the system.
+   - Perform tests on database connections and ensure that data is being accurately stored and retrieved.
+
+3. **User Acceptance Testing (UAT)**:
+   - Conduct UAT with a sample group of lecturers, programme coordinators, and academic managers to gather feedback on usability and functionality.
+   - Document any issues or suggestions for improvement.
+
+4. **Performance Testing**:
+   - Test the application under load to ensure it can handle multiple simultaneous users without significant degradation in performance.
+   - Use tools like JMeter or LoadRunner to simulate user interactions and measure response times.
+
+5. **Security Testing**:
+   - Perform security assessments to identify vulnerabilities in the application, including input validation, authentication, and authorization checks.
+   - Utilize tools like OWASP ZAP or Burp Suite for automated security scanning.
 
 ## Technical Aspects
 
 ### Web-Based Application
-The CMCS is designed as a web-based application, accessible from any device with an internet connection, facilitating ease of use from various locations.
+The CMCS is designed as a web-based application, ensuring accessibility from any device with an internet connection. This flexibility allows users to engage with the system from various locations, enhancing usability and ensuring that critical functionalities are always available.
 
 ### Built with .NET Core MVC
-CMCS is developed using the .NET Core framework with ASP.NET MVC (Model-View-Controller), providing robust performance and scalability for handling complex applications.
+Developed using the .NET Core framework with ASP.NET MVC (Model-View-Controller) architecture, CMCS provides robust performance and scalability. This structure allows for effective management of user interactions and data processing, improving both the development process and overall user experience.
 
-## Colour Code & Themes
-The CMCS is elegantly designed with the Dark Academia theme, creating an interface that combines functionality with aesthetic appeal. The sophisticated palette of browns, blacks, greens, and whites enhances usability while minimizing eye strain. 
+![MVC](https://media.geeksforgeeks.org/wp-content/uploads/20220224160807/Model1.png)
 
-- **Brown**: Grounding the design with warmth and stability.
-- **Black**: Adding modern sophistication and clarity.
-- **Green**: Highlighting key actions and promoting harmony.
-- **White**: Serving as a neutral backdrop for clarity and elegance.
+### Colour Palette
 
-This harmonious blend of colors creates an immersive experience that is both functional and enchanting.
+- **Brown**: Provides grounding warmth and stability, akin to the comforting scent of leather-bound books.
+- **Black**: Introduces bold sophistication, ensuring clarity and precision in navigation.
+- **Green**: Symbolizes growth and renewal, highlighting key actions within the interface.
+- **White**: Serves as a clean backdrop, allowing elements to stand out with elegance.
+
+![Colour Palette](https://i.pinimg.com/originals/53/5d/d8/535dd8ae95945c465e6cdbe82927664c.png)
 
 ## Conclusion
-The Contract Monthly Claim System (CMCS) is a vital application that streamlines the management of monthly claims for Independent Contractor lecturers, enhancing efficiency, transparency, and accountability in educational institutions.
-
-For further details or contributions, please refer to the project documentation or contact the project maintainer.
+The Contract Monthly Claim System (CMCS) is an essential tool for managing claims efficiently within educational institutions. By automating processes and enhancing transparency, CMCS not only benefits lecturers but also streamlines administrative tasks, paving the way for better resource management and improved institutional efficiency.
