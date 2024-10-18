@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\sajan\\source\\repos\\CMCS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3B004DC-5365-4A0E-9200-BDB2ED59C0DE}|CMCS\\CMCS.csproj|c:\\users\\sajan\\source\\repos\\cmcs\\cmcs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3B004DC-5365-4A0E-9200-BDB2ED59C0DE}|CMCS\\CMCS.csproj|solutionrelative:cmcs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3B004DC-5365-4A0E-9200-BDB2ED59C0DE}|CMCS\\CMCS.csproj|c:\\users\\sajan\\source\\repos\\cmcs\\cmcs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A3B004DC-5365-4A0E-9200-BDB2ED59C0DE}|CMCS\\CMCS.csproj|solutionrelative:cmcs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -47,19 +51,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Program.cs",
+              "RelativeDocumentMoniker": "CMCS\\Program.cs",
+              "ToolTip": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Program.cs",
+              "RelativeToolTip": "CMCS\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAowD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T15:02:48.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CMCS\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CMCS\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-18T14:59:46.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ViewClaim.cs",
               "DocumentMoniker": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\Models\\ViewClaim.cs",
               "RelativeDocumentMoniker": "CMCS\\Models\\ViewClaim.cs",
@@ -67,8 +84,7 @@
               "RelativeToolTip": "CMCS\\Models\\ViewClaim.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:21:19.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T14:21:19.785Z"
             }
           ]
         }
