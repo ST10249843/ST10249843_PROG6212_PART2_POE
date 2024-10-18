@@ -10,56 +10,56 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <style>
         body {
-            background-color: #3e2723; /* Brown background */
-            color: #fff; /* White text color */
+            background-color: #3e2723;  
+            color: #fff;  
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         .container {
-            background-color: #fff; /* White background for content */
-            color: #3e2723; /* Brown text color */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            background-color: #fff;  
+            color: #3e2723;  
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             max-width: 800px;
             margin: 20px auto;
-            border: none; /* Remove border */
+            border: none;  
         }
 
         .form-label {
-            color: #3e2723; /* Brown label color */
+            color: #3e2723; 
         }
 
         .form-control {
-            border-color: #3e2723; /* Brown border for input fields */
+            border-color: #3e2723;  
         }
 
         .btn-primary {
-            background-color: #3e2723; /* Brown button background */
-            border-color: #3e2723; /* Brown button border */
-            color: #fff; /* White text */
+            background-color: #3e2723;  
+            border-color: #3e2723;  
+            color: #fff; 
         }
 
             .btn-primary:hover {
-                background-color: #2c1b19; /* Darker brown on hover */
-                border-color: #2c1b19; /* Darker brown border on hover */
+                background-color: #2c1b19;  
+                border-color: #2c1b19; 
             }
 
         .btn-secondary {
-            background-color: #000; /* Black button background */
-            border-color: #000; /* Black button border */
-            color: #fff; /* White text */
+            background-color: #000;  
+            border-color: #000; 
+            color: #fff;  
         }
 
             .btn-secondary:hover {
-                background-color: #333; /* Darker black on hover */
-                border-color: #333; /* Darker black border on hover */
+                background-color: #333; 
+                border-color: #333; 
             }
 
         .text-danger {
-            color: #dc3545; /* Red color for validation messages */
+            color: #dc3545;  
         }
 
         .text-center {
@@ -88,17 +88,17 @@
             @using (Html.BeginForm("SubmitClaim", "Claim", FormMethod.Post, new { enctype = "multipart/form-data" }))
             {
                 <div class="mb-3">
-                    @Html.Label("Name", "Name", new { @class = "form-label" }) <!-- Updated -->
+                    @Html.Label("Name", "Name", new { @class = "form-label" }) 
                     @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Enter your name" })
                 </div>
 
                 <div class="mb-3">
-                    @Html.Label("Surname", "Surname", new { @class = "form-label" }) <!-- Updated -->
+                    @Html.Label("Surname", "Surname", new { @class = "form-label" }) 
                     @Html.TextBox("Surname", null, new { @class = "form-control", placeholder = "Enter your surname" })
                 </div>
 
                 <div class="mb-3">
-                    @Html.Label("Module", "Module", new { @class = "form-label" }) <!-- Updated -->
+                    @Html.Label("Module", "Module", new { @class = "form-label" }) 
                     @Html.TextBox("Module", null, new { @class = "form-control", placeholder = "Enter your module" })
                 </div>
 
@@ -123,7 +123,7 @@
                 <div class="mb-3">
                     @Html.LabelFor(m => m.SupportingDocument, "Supporting Document", new { @class = "form-label" })
                     <input type="file" name="SupportingDocument" class="form-control" id="SupportingDocument" accept=".pdf" />
-                    <span id="fileError" class="text-danger"></span> <!-- For displaying error messages -->
+                    <span id="fileError" class="text-danger"></span>  
                     @Html.ValidationMessageFor(m => m.SupportingDocument, "", new { @class = "text-danger" })
                 </div>
 

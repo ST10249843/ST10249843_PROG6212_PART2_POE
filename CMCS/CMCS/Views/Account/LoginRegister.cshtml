@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!-- Font Awesome -->
     <style>
         body {
-            background-color: #3e2723; /* Brown background */
-            color: #fff; /* White text color */
+            background-color: #3e2723; 
+            color: #fff;  
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -23,46 +23,46 @@
 
         .nav-tabs .nav-link.active {
             color: #fff;
-            background-color: #3e2723; /* Brown background for active tab */
-            border-color: #3e2723; /* Brown border for active tab */
+            background-color: #3e2723;  
+            border-color: #3e2723;  
         }
 
         .nav-tabs .nav-link {
-            border-color: #ced4da; /* Light grey border for tabs */
-            color: #3e2723; /* Brown text color for tabs */
+            border-color: #ced4da; 
+            color: #3e2723; 
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-            color: #3e2723; /* Brown text color */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            padding: 40px; /* Increased padding */
-            max-width: 900px; /* Increased max-width */
-            margin: 40px auto; /* Increased margin */
+            background-color: rgba(255, 255, 255, 0.9);  
+            color: #3e2723;  
+            border-radius: 8px; 
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); 
+            padding: 40px;  
+            max-width: 900px;  
+            margin: 40px auto;  
         }
 
         .form-label {
-            color: #3e2723; /* Brown label color */
+            color: #3e2723;  
         }
 
         .form-control {
-            background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency for input fields */
-            border-color: #3e2723; /* Brown border for input fields */
+            background-color: rgba(255, 255, 255, 0.8);  
+            border-color: #3e2723;  
         }
 
         .btn-primary {
-            background-color: #3e2723; /* Brown button background */
-            border-color: #3e2723; /* Brown button border */
+            background-color: #3e2723;  
+            border-color: #3e2723;  
         }
 
             .btn-primary:hover {
-                background-color: #2c1b19; /* Darker brown on hover */
-                border-color: #2c1b19; /* Darker brown border on hover */
+                background-color: #2c1b19; 
+                border-color: #2c1b19; 
             }
 
         .text-danger {
-            color: #dc3545; /* Red color for validation messages */
+            color: #dc3545;  
         }
 
         .password-container {
@@ -75,8 +75,18 @@
             top: 50%;
             transform: translateY(-50%);
             cursor: pointer;
-            color: #3e2723; /* Brown color for eye icon */
+            color: #3e2723;  
         }
+
+        /*
+        Author: FreeFrontend
+        Date: June 13, 2023
+        Title: CSS Login Forms
+        Code my ideas for the registration and login
+        Type: Source Code
+        Availability: FreeFrontend, https://freefrontend.com/css-login-forms/
+        */
+
     </style>
 </head>
 <body>
@@ -92,8 +102,7 @@
         </ul>
 
         <div class="tab-content" id="myTabContent">
-            <!-- Register Form -->
-            <div class="tab-pane fade @(activeTab == "login" ? "" : "show active")" id="register" role="tabpanel" aria-labelledby="register-tab">
+             <div class="tab-pane fade @(activeTab == "login" ? "" : "show active")" id="register" role="tabpanel" aria-labelledby="register-tab">
                 @model CMCS.Models.User
 
                 @using (Html.BeginForm("LoginRegister", "Account", FormMethod.Post))
@@ -137,8 +146,7 @@
                 }
             </div>
 
-            <!-- Login Form -->
-            <div class="tab-pane fade @(activeTab == "login" ? "show active" : "")" id="login" role="tabpanel" aria-labelledby="login-tab">
+             <div class="tab-pane fade @(activeTab == "login" ? "show active" : "")" id="login" role="tabpanel" aria-labelledby="login-tab">
                 @using (Html.BeginForm("LoginRegister", "Account", FormMethod.Post))
                 {
                     @Html.Hidden("actionType", "Login")

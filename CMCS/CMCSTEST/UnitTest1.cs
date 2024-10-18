@@ -18,7 +18,6 @@ public class UnitTest1
         _claimController = new ClaimController();
     }
 
-    // Tests for AccountController
     [Fact]
     public void LoginRegister_GET_ReturnsViewResult()
     {
@@ -48,7 +47,6 @@ public class UnitTest1
         Assert.Equal("Home", redirectResult.ControllerName);
     }
 
-    // Tests for ClaimController
     [Fact]
     public void SubmitClaim_GET_ReturnsViewResult()
     {
@@ -61,7 +59,7 @@ public class UnitTest1
     [Fact]
     public async Task SubmitClaim_POST_InvalidClaim_ReturnsViewWithModelErrors()
     {
-        var claim = new CMCS.Models.Claim(); // Invalid claim without required properties
+        var claim = new CMCS.Models.Claim();  
         _claimController.ModelState.AddModelError("SupportingDocument", "You must upload a file.");
 
         var result = await _claimController.SubmitClaim(claim);

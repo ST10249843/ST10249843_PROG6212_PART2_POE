@@ -28,7 +28,7 @@ namespace CMCS
 
             app.UseRouting();
 
-            app.UseAuthentication(); // Ensure this is added before app.UseAuthorization()
+            app.UseAuthentication(); 
             app.UseAuthorization();
 
             // Default route
@@ -47,8 +47,8 @@ namespace CMCS
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    options.LoginPath = "/Account/Login"; // Specify your login path
-                    options.AccessDeniedPath = "/Account/AccessDenied"; // Optional: Path for access denied
+                    options.LoginPath = "/Account/Login"; 
+                    options.AccessDeniedPath = "/Account/AccessDenied"; 
                 });
 
             // Add authorization policies

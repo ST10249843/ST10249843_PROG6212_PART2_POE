@@ -12,6 +12,14 @@ namespace CMCS.Controllers
 {
     public class AccountController : Controller
     {
+        /*
+        Author: GeeksforGeeks
+        Date: February 7, 2019
+        Title: C# | List Class
+        Type: Source Code
+        Availability: GeeksforGeeks, https://www.geeksforgeeks.org/c-sharp-list-class/
+        */
+
         private static List<User> Users = new List<User>();
         private static User CurrentUser = null; 
 
@@ -20,6 +28,14 @@ namespace CMCS.Controllers
             ViewBag.ActiveTab = tab ?? "login"; 
             return View();
         }
+
+
+        /*
+        Author: YogeshKumar Hadiya
+        Date: March 2, 2016
+        Title: Create Login (Sign In) and Registration (Sign Up) Form in C# Windows Form with Database
+        Availability: C# Corner, https://www.c-sharpcorner.com/article/create-loginsign-in-and-registration-sign-up-form-in-c-sharp-windows-form-with-da/
+        */
 
         // POST: LoginRegister
         [HttpPost]
@@ -48,7 +64,6 @@ namespace CMCS.Controllers
                 var loggedInUser = Users.FirstOrDefault(u => u.Email == user.Email && u.Password == user.Password);
                 if (loggedInUser != null)
                 {
-                    // Explicitly use System.Security.Claims.Claim to resolve ambiguity
                     var claims = new List<System.Security.Claims.Claim>
             {
                 new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, loggedInUser.Email),
@@ -74,7 +89,6 @@ namespace CMCS.Controllers
             return View("LoginRegister", user);
         }
 
-        // GET: Welcome
         public IActionResult Index()
         {
             return View();
@@ -150,6 +164,7 @@ namespace CMCS.Controllers
 
             return RedirectToAction("ListLecturers"); // Redirect back to the list of lecturers
         }
+
         // POST: Logout
         [HttpPost]
         public IActionResult Logout()

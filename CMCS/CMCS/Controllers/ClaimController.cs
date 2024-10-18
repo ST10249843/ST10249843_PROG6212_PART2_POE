@@ -13,13 +13,30 @@ namespace CMCS.Controllers
         // Static list to simulate a data source
         private static readonly List<Claim> Claims = new List<Claim>();
 
-        // GET: SubmitClaim
+
+        /*
+        Author: Microsoft
+        Date: 07/14/2023
+        Title: Role-based authorization in ASP.NET Core
+        Code version: ASP.NET Core 8.0
+        Type: Source Code
+        Availability: Microsoft Learn, https://learn.microsoft.com/en-us/aspnet/core/security/authorization/roles?view=aspnetcore-8.0
+        */
+
         [Authorize(Roles = "Lecturer")]  // Only lecturers can access this
         public IActionResult SubmitClaim()
         {
             ViewBag.IsSuccess = (bool?)null;
             return View();
         }
+
+        /*
+        Author: Microsoft
+        Date: April 13, 2023
+        Title: How to upload a file to a Web site by using Visual C# 
+        Type: Source Code
+        Availability: Microsoft Learn, https://learn.microsoft.com/en-us/troubleshoot/developer/webapps/aspnet/development/upload-file-to-web-site
+        */
 
         [HttpPost]
         [Authorize(Roles = "Lecturer")]  // Only lecturers can submit claims
