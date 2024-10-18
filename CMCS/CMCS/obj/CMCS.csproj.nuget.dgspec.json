@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\CMCS.csproj": {}
+    "C:\\Users\\sajan\\Desktop\\2024\\SEM 2\\PROG 6212\\POE\\CMCS\\CMCS\\CMCS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\CMCS.csproj": {
+    "C:\\Users\\sajan\\Desktop\\2024\\SEM 2\\PROG 6212\\POE\\CMCS\\CMCS\\CMCS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\CMCS.csproj",
+        "projectUniqueName": "C:\\Users\\sajan\\Desktop\\2024\\SEM 2\\PROG 6212\\POE\\CMCS\\CMCS\\CMCS.csproj",
         "projectName": "CMCS",
-        "projectPath": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\CMCS.csproj",
+        "projectPath": "C:\\Users\\sajan\\Desktop\\2024\\SEM 2\\PROG 6212\\POE\\CMCS\\CMCS\\CMCS.csproj",
         "packagesPath": "C:\\Users\\sajan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sajan\\source\\repos\\CMCS\\CMCS\\obj\\",
+        "outputPath": "C:\\Users\\sajan\\Desktop\\2024\\SEM 2\\PROG 6212\\POE\\CMCS\\CMCS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sajan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
